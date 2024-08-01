@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <link rel="stylesheet" href="Mine.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mines Game</h1>
+        <div class="controls">
+            <div class="bomb-input">
+                <label for="bombs">Number of Bombs: </label>
+                <select id="bombs">
+                    <option value="">Select Number</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="amount-input">
+                <label for="amount">Enter Amount: </label>
+                <input type="number" id="amount" min="0" value="0">
+            </div>
+            <button id="startGame">Start Game</button>
+        </div>
+        <div id="gameBoard" class="game-board"></div>
+        <div id="message"></div>
+        <div id="moneyDisplay">Money: $0</div>
+    </div>
+    <script src="Mine.js"></script>
+</body>
+</html>
